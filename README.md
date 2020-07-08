@@ -6,7 +6,18 @@
 	- +는 인풋으로 보고 13번에 꽂는다. 
 	- -는 RND(ground)에 꽂는다. // 접지한다. 
 # 소스코드
+- ex1~4 : 기초 코드 
 - botten : 버튼 사용해서 led 키기
 	- 반딧불이 불 
 - speaker : 피에조 스피커 사용
 	- speaker3 : 버튼 3개 사용해서 고양의 봄 연주하기 
+- serial : 조도 센서값을 시리얼 통신을 통해 전달받는다
+	- serial_1 : 조도 센서값을 시리얼 모니터를 통해서 확인하기
+	- serial_2 : 주위 밝기에 따라 LED가 켜지는 빛 감지기 
+		- 밝으면 led 어둡게, 어두우면 led 밝게 -> map()함수 사용 
+		- int light = analogRead(A0);
+		- int ledLight = map(light, 0,1023,255,0);
+	- serial_3 : serial_2 응용, led 2개 사용
+		- led 1 : 밝으면 led 어둡게, 어두우면 led 밝게
+		- led 2 : 밝으면 led 밝게, 어두우면 led 어둡게
+	- serial_4 : 피에조 스피커를 사용해서 조도센서 값에 따라 소리 내기 
