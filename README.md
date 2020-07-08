@@ -24,12 +24,12 @@
 	- serial_5 : 
 	- serial_6 : A0로 입력받은 조도센서 값이 600보다 크면 LED 꺼지고, 600보다 작으면 LED 켜지게 하기 
 		- pinMode(12,OUTPUT);
-		- int light = analogRead(A0);
-		  // digitalRead(9) == HIGH
+		- ```int light = analogRead(A0);
 		  if(light> 600 ){ // 600보다 밝으면 꺼지고 
 		    digitalWrite(12,0);
 		    delay(1000);
 		  } else{// 600보다 어두우면 켜진다.
 		    digitalWrite(12,1);
 		    delay(1000);
+		    ```
 		- digitalWrite(12,0);
