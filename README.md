@@ -33,3 +33,6 @@
 		    delay(1000);
 		    ```
 		- digitalWrite(12,0);
+- distence : 초음파 센서 사용 
+	- distence : 초음파 센서값을 시리얼 통신을 통해 전달받는다. 
+	- distence_2: 초음파 센서 사용하기 , 거리에 따라 led 3개 차례로 켜기 
