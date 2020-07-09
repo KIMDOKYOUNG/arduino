@@ -21,7 +21,7 @@
 		- led 1 : 밝으면 led 어둡게, 어두우면 led 밝게
 		- led 2 : 밝으면 led 밝게, 어두우면 led 어둡게
 	- serial_4 : 피에조 스피커를 사용해서 조도센서 값에 따라 소리 내기 
-	- serial_5 : 
+	- serial_5 : 주위 밝기에 따라 led가 켜지는 빛 감지기 만들기 , led 2개 , 소리내기, 버튼 누르면 3초간 꺼지기 
 	- serial_6 : A0로 입력받은 조도센서 값이 600보다 크면 LED 꺼지고, 600보다 작으면 LED 켜지게 하기 
 		- pinMode(12,OUTPUT);
 		- ```int light = analogRead(A0);
