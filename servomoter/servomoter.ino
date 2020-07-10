@@ -9,7 +9,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  for(int i = 0; i<120;++i){ // 1초에 1도씩 움직인다.
+  for(int i = 0; i<120;++i){ // 1도씩 움직인다.
     myservo.write(i);
     delay(15);
   }
